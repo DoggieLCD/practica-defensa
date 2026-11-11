@@ -309,7 +309,10 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 syste
 .wrap { max-width: 760px; margin: 0 auto; padding: 28px 16px 48px; }
 .eyebrow { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
 h1 { margin: 4px 0 6px; font-size: 30px; line-height: 1.15; color: var(--accent); }
-.tesis { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
+.tesis { margin: 0 0 8px; color: var(--muted); font-size: 15px; }
+.enlace-guia { margin: 0 0 20px; font-size: 15px; font-weight: 600; }
+.enlace-guia a { color: var(--accent); }
+.enlace-guia a:focus-visible { outline: 3px solid var(--celeste); outline-offset: 2px; border-radius: 4px; }
 .tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
 .tabs button { appearance: none; border: 0; background: transparent; color: var(--ink); font: inherit; font-weight: 600; font-size: 15px; padding: 10px 6px; border-radius: 9px; cursor: pointer; min-height: 44px; }
 .tabs button[aria-selected="true"] { background: var(--btn); color: var(--btn-ink); }
@@ -391,6 +394,7 @@ footer p { margin: 4px 0; }
     <p class="eyebrow">Ensayo de defensa</p>
     <h1>Práctica para la defensa</h1>
     <p class="tesis" id="tesis"></p>
+    <p class="enlace-guia"><a href="tecnica.html">Ver la guía técnica de la tesis →</a></p>
     <div class="tabs" role="tablist" aria-label="Modo de práctica">
       <button type="button" role="tab" id="tab-quiz" aria-controls="vista-quiz" data-vista="quiz">Quiz</button>
       <button type="button" role="tab" id="tab-tarjetas" aria-controls="vista-tarjetas" data-vista="tarjetas">Tarjetas</button>
